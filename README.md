@@ -158,7 +158,7 @@ This project is a collaborative effort. Here are the details of the team members
     * **GitHub:** [@Sneha-Nahak](https://github.com/Sneha-Nahak)
     * **Role:** Lead Frontend Developer, responsible for [specific responsibilities, e.g., UI/UX design, React component development]
 
-* **[2nd Collaborators]**
+* **[2nd Collaborator]**
     * **GitHub:** [@joinmygithubh](https://github.com/joinmygithubh)
     * **Role:** Backend Developer, responsible for [specific responsibilities, e.g., API development, database integration, authentication]
 
