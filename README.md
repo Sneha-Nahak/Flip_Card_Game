@@ -19,8 +19,9 @@ This is a full-stack web application for a "Flip Card Game," built using the MER
 
 
 * Interactive flip card game
-* User authentication (if applicable)
-* Score tracking (if applicable)
+* User authentication 
+* Score tracking
+* Individual user history
 * Responsive design
 
 ## Technologies Used
