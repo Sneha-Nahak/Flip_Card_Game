@@ -17,7 +17,7 @@ This is a full-stack web application for a "Flip Card Game," built using the MER
 
 ## Features
 
-*(Add a list of key features of your Flip Card Game here. For example:)*
+
 * Interactive flip card game
 * User authentication (if applicable)
 * Score tracking (if applicable)
