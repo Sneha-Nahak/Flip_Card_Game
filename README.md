@@ -150,7 +150,7 @@ We welcome contributions! Please follow these steps:
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a Pull Request.
 
-## Demo Collaborators
+##  Collaborators Of This Project
 
 This project is a collaborative effort. Here are the details of the team members:
 
