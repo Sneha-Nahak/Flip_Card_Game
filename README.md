@@ -152,13 +152,13 @@ We welcome contributions! Please follow these steps:
 
 ## Demo Collaborators
 
-This project is a collaborative effort. Here are the details of some of the team members:
+This project is a collaborative effort. Here are the details of the team members:
 
 * **[1st Collaborator]**
-    * **GitHub:** [@collaborator1_github](https://github.com/collaborator1_github)
+    * **GitHub:** [@collaborator1_github](https://github.com/Sneha-Nahak)
     * **Role:** Lead Frontend Developer, responsible for [specific responsibilities, e.g., UI/UX design, React component development]
 
 * **[2nd Collaborators]**
-    * **GitHub:** [@collaborator2_github](https://github.com/collaborator2_github)
+    * **GitHub:** [@collaborator2_github](https://github.com/joinmygithubh)
     * **Role:** Backend Developer, responsible for [specific responsibilities, e.g., API development, database integration, authentication]
 
