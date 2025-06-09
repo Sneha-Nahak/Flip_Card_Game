@@ -1,0 +1,98 @@
+/* Tile container with perspective for 3D flipping */
+.tile-container {
+  perspective: 1000px;
+}
+
+/* Tile wrapper for grid sizing */
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), minmax(60px, 1fr));
+  gap: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* Responsive square tiles using aspect-ratio */
+.tile {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+
+  /* Optional glow/border/shadow */
+  max-width: 100%;
+}
+
+/* Flipped tile animation */
+.tile.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.tile-front,
+.tile-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2rem); /* scales with screen size */
+  transition: background-color 0.3s, transform 0.6s;
+}
+
+/* Back (question mark) side */
+.tile-back {
+  background-color: #6c757d; /* Bootstrap secondary */
+  color: #fff;
+}
+
+/* Front (icon) side */
+.tile-front {
+  background-color: #0d6efd; /* Bootstrap primary */
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* Disable interaction for matched tiles */
+.tile.disabled {
+  pointer-events: none;
+  opacity: 0.75;
+  box-shadow: 0 0 0.5rem rgba(25, 135, 84, 0.75); /* Bootstrap success green glow */
+}
+
+/* Modal backdrop override */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040; /* Keep below modal */
+}
+
+/* Modal dialog needs to be above backdrop to enable clicks */
+.modal-dialog {
+  position: relative;
+  z-index: 1050; /* Above modal backdrop */
+}
+
+/* Bootstrap-based row/column adjustments */
+@media (max-width: 576px) {
+  .row-cols-4 > * {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 400px) {
+  .tile-front,
+  .tile-back {
+    font-size: 1.25rem;
+  }
+}
