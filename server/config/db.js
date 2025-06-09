@@ -1,14 +1,21 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://snehanahak6:Sneha%402003@sneha-nahak.eb3kja4.mongodb.net/tile_game', {
+    if (!process.env.MONGO_URI) {
+      throw new Error("MONGO_URI is not set in the environment variables!");
+    }
+
+    await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000, // Timeout after 5 seconds
     });
-    console.log('MongoDB Connected');
+
+    console.log(' MongoDB Connected');
   } catch (error) {
-    console.error(`Error: ${error.message}`);
+    console.error(` Error connecting to MongoDB:`, error);
     process.exit(1);
   }
 };
