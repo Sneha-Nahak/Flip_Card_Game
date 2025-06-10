@@ -44,35 +44,31 @@ This is a full-stack web application for a "Flip Card Game," built using the MER
 
 The project is divided into two main parts: `client` and `server`.
 ```
-.
+Flip_Card_Game/
 ├── client/
 │   ├── node_modules/
 │   ├── public/
-│   ├── src/                 # React source code
-│   │   ├── components/      # Reusable React components
-│   │   ├── pages/           # React page components/views
-│   │   ├── App.jsx          # Main App component
-│   │   └── main.jsx         # Entry point for React app
-│   ├── .env                 # Client-side environment variables
+│   ├── src/
+│   ├── .env
 │   ├── .gitignore
-│   ├── eslint.config.js     # ESLint configuration for client
-│   ├── index.html           # Main HTML file
+│   ├── eslint.config.js
+│   ├── index.html
 │   ├── package-lock.json
-│   ├── package.json         # Client-side dependencies and scripts
+│   ├── package.json
 │   ├── README.md
-│   └── vite.config.js       # Vite configuration
+│   └── vite.config.js
 └── server/
-├── config/              # Server configurations (e.g., database connection)
-├── controllers/         # Express.js route handlers/logic
-├── middleware/          # Express.js middleware
-├── models/              # Mongoose models for MongoDB schemas
-├── node_modules/
-├── routes/              # Express.js API routes
-├── .env                 # Server-side environment variables
-├── .gitignore
-├── package-lock.json
-├── package.json         # Server-side dependencies and scripts
-└── server.js            # Main Express.js server entry point
+    ├── config/
+    ├── controllers/
+    ├── middleware/
+    ├── models/
+    ├── node_modules/
+    ├── routes/
+    ├── .env
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    └── server.js
 ```
 
 ## Getting Started
