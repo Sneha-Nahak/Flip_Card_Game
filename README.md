@@ -30,14 +30,15 @@ This is a full-stack web application for a "Flip Card Game," built using the MER
 * React.js
 * Vite (for fast development server and bundling)
 * HTML
-* CSS/Sass (if used)
+* Bootstrap
+* CSS
 * ESLint (for code quality)
 
 **Server (Backend):**
 * Node.js
 * Express.js
 * MongoDB (for database)
-* Mongoose (ODM for MongoDB, if used)
+* Mongoose (ODM for MongoDB)
 * dotenv (for environment variables)
 
 ## Project Structure
