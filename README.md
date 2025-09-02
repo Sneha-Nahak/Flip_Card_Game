@@ -12,7 +12,7 @@ This is a full-stack web application for a "Flip Card Game," built using the MER
     * [Installation](#installation)
     * [Running the Application](#running-the-application)
 * [Contributing](#contributing)
-* [Demo Collaborators](#demo-collaborators)
+* [Collaborators Of This Project](#collaborators-of-this-project)
 
 
 ## Features
